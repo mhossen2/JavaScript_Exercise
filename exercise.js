@@ -49,3 +49,10 @@ console.log(output)
 const position = 'engineer'
 let result = position.toUpperCase()
 console.log(result)
+
+//forEach method
+let names = ['james', 'erik', 'aston', 'fedric']
+
+names.forEach((name, index) => {
+  console.log(index, name)
+})
