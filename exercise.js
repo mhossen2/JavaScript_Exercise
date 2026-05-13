@@ -56,3 +56,28 @@ let names = ['james', 'erik', 'aston', 'fedric']
 names.forEach((name, index) => {
   console.log(index, name)
 })
+
+//create object literal and add method in it
+employee = {
+  name: 'Andrew',
+  position: 'Supervisor',
+  salary: 20000,
+  city: 'London',
+  login: function () {
+    console.log('you are logged in')
+  },
+  logout: function () {
+    console.log('you just logged out')
+  },
+}
+console.log(employee.name)
+console.log(employee['position'])
+
+salary = 30000
+console.log(salary)
+console.log(typeof employee)
+
+employee.login()
+employee.logout()
+
+
