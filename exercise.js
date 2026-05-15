@@ -103,6 +103,32 @@ employee = {
 
 employee.logSites()
 
+// use objects inside Array
+employee = {
+  name: 'Andrew',
+  position: 'Supervisor',
+  salary: 20000,
+  city: 'London',
+  sites: [
+    { title: 'code and tech', like: 20 },
+    { title: 'knowledgePlatform', like: 35 },
+  ],
+  login: function () {
+    console.log('you are logged in')
+  },
+  logout: function () {
+    console.log('you just logged out')
+  },
+  logSites() {
+    
+    this.sites.forEach((site) => {
+      console.log(site.title, site.like)
+    })
+  },
+}
+
+employee.logSites()
+
 
 
 
