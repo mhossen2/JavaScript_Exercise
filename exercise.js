@@ -80,4 +80,29 @@ console.log(typeof employee)
 employee.login()
 employee.logout()
 
+//using 'this' key word to access in an object from another function
+employee = {
+  name: 'Andrew',
+  position: 'Supervisor',
+  salary: 20000,
+  city: 'London',
+  sites: ['code and tech', 'knowledgePlatform'],
+  login: function () {
+    console.log('you are logged in')
+  },
+  logout: function () {
+    console.log('you just logged out')
+  },
+  logSites() {
+    // console.log(this.sites)
+    this.sites.forEach((site) => {
+      console.log(site)
+    })
+  },
+}
+
+employee.logSites()
+
+
+
 
